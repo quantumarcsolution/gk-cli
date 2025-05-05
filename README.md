@@ -103,7 +103,7 @@ All binaries can be found on the [releases page][]. Make sure you select the bin
 
 ### macOS
 
-If you have the original GitKraken CLI installed, you can use the following command to upgrade to the latest version:
+`gk` is available from [Homebrew][brew] with the following command:
 
 ```bash
 brew uninstall gitkraken-cli
@@ -117,7 +117,7 @@ Download it from the [releases page][], unzip it, and add it to your binaries fo
 sudo mv ~/Downloads/gk /usr/local/bin/gk
 ```
 
-Then, make sure it's executable:
+Or download it from the [releases page][] and add it to your binaries folder:
 
 ```bash
 chmod +x /usr/local/bin/gk
@@ -141,7 +141,7 @@ Try running `gk setup` again and then click "Open Anyway" to continue.
 
 ### Unix / Ubuntu
 
-`gk` is available as a downloadable binary from the [releases page][]. Once you have it, add it to your binaries folder:
+`gk` is available as a downloadable binary from the [releases page](https://github.com/gitkraken/gk-cli/releases). Once you have it, add it to your binaries folder:
 
 ```bash
 mv ~/Downloads/gk /usr/local/bin/gk
