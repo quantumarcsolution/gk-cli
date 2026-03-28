@@ -4,6 +4,7 @@
         "GitHub.copilot",
         "eamodio.gitlens",
         "redhat.vscode-yaml",
-        "charliermarsh.ruff"
+        "charliermarsh.ruff",
+        "ms-mssql.mssql-database-management-keymap"
     ]
 }
