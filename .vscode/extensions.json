@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "golang.go",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml",
+        "charliermarsh.ruff"
+    ]
+}
