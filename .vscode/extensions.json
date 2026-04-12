@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "golang.go",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "redhat.vscode-yaml",
+        "charliermarsh.ruff",
+        "ms-mssql.mssql-database-management-keymap"
+    ]
+}

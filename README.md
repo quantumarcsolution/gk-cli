@@ -106,47 +106,27 @@ gk remote -v
 
 ## Installation
 
-All binaries can be found on the [releases page][]. Make sure you select the binary for your OS(Linux/Mac/Windows) and CPU architecture (arm64/x86_64/i386).
-
 ### macOS
 
-`gk` is available from [Homebrew][brew] with the following command:
+`gk` is available from [Homebrew](https://formulae.brew.sh/cask/gitkraken-cli) with the following command:
+
+Homebrew:
 
 ```bash
-brew uninstall gitkraken-cli
+brew install gitkraken-cli
 ```
 
-`gk` is available as a downloadable binary from the [releases page][].
-
-Download it from the [releases page][], unzip it, and add it to your binaries folder:
+Or download it from the [releases page](https://github.com/gitkraken/gk-cli/releases) and add it to your binaries folder:
 
 ```bash
-sudo mv ~/Downloads/gk /usr/local/bin/gk
+mv ~/Downloads/gk /usr/local/bin/gk
 ```
-
-Or download it from the [releases page][] and add it to your binaries folder:
-
-```bash
-chmod +x /usr/local/bin/gk
-```
-
-Test the installation by running `gk setup`.
-
-You will likely run into a security error that looks like this:
-
-![](./images/not-opened.png)
-
-To fix this, go to Settings > Security & Privacy > General and click "Allow Anyway".
-
-![](./images/allow-anyway.png)
-
-Try running `gk setup` again and then click "Open Anyway" to continue.
-
-![](./images/open-anyway.png)
 
 ---
 
 ### Unix / Ubuntu
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/gitkraken-cli)
 
 `gk` is available as a downloadable binary from the [releases page](https://github.com/gitkraken/gk-cli/releases). Once you have it, add it to your binaries folder:
 
@@ -178,57 +158,17 @@ sudo rpm -i ./gk.rpm
 
 ### Windows
 
-#### Optional Enable Auto Command Completion
+`gk` is available from [Winget][winget] with the following command:
 
-To enable auto-completion for `gk` in PowerShell, follow these steps:
-
-**Create and Save the Install Scripts**
-Appendix section with script files:
-
-- [gkcli-update-profile.ps1](#gkcli-update-profileps1)
-- [gkcli-uninstall-profile.ps1](#gkcli-uninstall-profileps1)
-
-##### Run the Installer Scripts
-
-- Change to the directory where update-profile.ps1 is located
-
-```sh
-cd "C:\Path\To\gkcli-update-profile.ps1"
+```bash
+winget install gitkraken.cli
 ```
 
-- Run the script to update the profile and sign the auto-completion script
+## ⚙️ Configuration
 
-```sh
-.\gkcli-update-profile.ps1
-```
+### Nerd Fonts
 
-- Restart PowerShell to apply the changes.
-
-##### Run the Uninstall Script
-
-- Change to the directory where uninstall-profile.ps1 is located
-
-```sh
-cd "C:\Path\To\gkcli-uninstall-profile.ps1"
-```
-
-- Run the script to remove the auto-completion setup
-
-```sh
-.\gkcli-uninstall-profile.ps1
-```
-
-- Restart PowerShell to apply the changes.
-
-Or download the binary from the [releases page][] and place the `gk.exe` in a desired folder.
-Then edit your environment variables to add it to your PATH.
-
-1. In Search, search for **Environment Variables**.
-2. Click on the **Edit the system environment variables** result.
-3. In the modal, click on the **Environment Variables...** button.
-4. In the **System Variables** section, scroll until you find the **PATH** variable. Click on it.
-   - If it doesn't exist, create a variable with the name **PATH**.
-5. Add the path to the `gk` binary at the end.
+The GitKraken CLI supports Nerd Fonts to display icons for some commands. To ensure correct icon rendering, please obtain and install a Nerd Font available at https://www.nerdfonts.com/. After installation, set the selected Nerd Font as the default font for your terminal.
 
 ## Troubleshooting
 
@@ -244,9 +184,16 @@ Oh-My-Zsh has `gitk` aliased as `gk` and that can create some problems. To fix t
 unalias gk
 ```
 
-## Support
+### Manual macOS Installation
 
-If you encounter any bugs, please submit them to our [Support Portal](https://help.gitkraken.com/gitkraken-desktop/contact-support/).
+If you install the CLI manually from the releases page on macOS, you will likely run into a security error that looks like this:
 
-General feedback and suggestions during testing can be submitted via the "#ambassadors" channel in the [GitKraken Community Slack](https://gitkraken.com/slack) as well as via this [Google Form](https://forms.gle/vAa4x8MaYKWcEdSB8). We will also send a final feedback form at the end of the testing phase.
+![](./images/not-opened.png)
 
+To fix this, go to Settings > Security & Privacy > General and click "Allow Anyway".
+
+![](./images/allow-anyway.png)
+
+Try running `gk setup` again and then click "Open Anyway" to continue.
+
+![](./images/open-anyway.png)
